@@ -7,7 +7,8 @@ def menu_start():
                     "2. Редактировать заметку\n"
                     "3. Удалить заметку\n"
                     "4. Список заметок\n"
-                    "5. Выход\n")
+                    "5. Сортировать список заметок по дате изменения\n"
+                    "6. Выход\n")
         print(text_menu)
         choice = input("Введите номер команды: ")
         match choice:
@@ -39,6 +40,8 @@ def menu_start():
             case "4":
                 get_list_notes()
             case "5":
+                sort_notes()
+            case "6":
                 save_file()
                 break
             case default:
